@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="495" height="210" viewBox="0 0 495 210" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="495" y2="210" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#58a6ff"/>
+      <stop offset="100%" stop-color="#bc8cff"/>
+    </linearGradient>
+    <linearGradient id="border" x1="0" y1="0" x2="495" y2="210" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#bc8cff" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0.05"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="barClip">
+      <rect x="30" y="188" width="435" height="6" rx="3"/>
+    </clipPath>
+  </defs>
+
+  <style>
+    text { font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; }
+    .title       { font-size: 14px; font-weight: 700; fill: #e6edf3; }
+    .section-lbl { font-size: 10px; font-weight: 600; fill: #484f58; letter-spacing: 1.2px; }
+    .label       { font-size: 12px; fill: #8b949e; }
+    .value       { font-size: 12px; font-weight: 700; fill: #e6edf3; }
+    .lang-name   { font-size: 11px; fill: #c9d1d9; }
+    .lang-pct    { font-size: 10.5px; fill: #6e7681; }
+  </style>
+
+  <!-- Card -->
+  <rect x="0.5" y="0.5" width="494" height="209" rx="10" fill="url(#bg)" stroke="url(#border)" stroke-width="1"/>
+
+  <!-- Title -->
+  <circle cx="30" cy="26" r="4" fill="url(#accent)" filter="url(#glow)"/>
+  <text x="44" y="30" class="title">m4logicworks's GitHub Stats</text>
+
+  <!-- Divider line under title -->
+  <line x1="30" y1="42" x2="465" y2="42" stroke="#21262d" stroke-width="1"/>
+
+  <!-- ── Left: Activity Metrics ── -->
+  <text x="30" y="60" class="section-lbl">ACTIVITY</text>
+
+  <!-- Row 1: Total Contributions -->
+  <g transform="translate(30, 75)">
+    <svg x="0" y="-11" width="14" height="14" viewBox="0 0 16 16"><path fill="#8b949e" d="M7.823 1.677 6.397 5.452H2.145l3.437 2.497-1.312 4.039L7.823 9.49l3.553 2.498-1.312-4.039 3.437-2.497H9.249L7.823 1.677z"/></svg>
+    <text x="22" y="0" class="label">Total Contributions</text>
+    <text x="218" y="0" class="value" text-anchor="end">117</text>
+  </g>
+
+  <!-- Row 2: Commits -->
+  <g transform="translate(30, 97)">
+    <svg x="0" y="-11" width="14" height="14" viewBox="0 0 16 16"><path fill="#8b949e" d="M11.93 8.5a4.002 4.002 0 0 1-7.86 0H.75a.75.75 0 0 1 0-1.5h3.32a4.002 4.002 0 0 1 7.86 0h3.32a.75.75 0 0 1 0 1.5Zm-1.43-.5a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z"/></svg>
+    <text x="22" y="0" class="label">Commits</text>
+    <text x="218" y="0" class="value" text-anchor="end">10</text>
+  </g>
+
+  <!-- Row 3: Pull Requests -->
+  <g transform="translate(30, 119)">
+    <svg x="0" y="-11" width="14" height="14" viewBox="0 0 16 16"><path fill="#8b949e" d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z"/></svg>
+    <text x="22" y="0" class="label">Pull Requests</text>
+    <text x="218" y="0" class="value" text-anchor="end">0</text>
+  </g>
+
+  <!-- Row 4: Private Contribs -->
+  <g transform="translate(30, 141)">
+    <svg x="0" y="-11" width="14" height="14" viewBox="0 0 16 16"><path fill="#8b949e" d="M4 4a4 4 0 0 1 8 0v2h.25c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 12.25 15h-8.5A1.75 1.75 0 0 1 2 13.25v-5.5C2 6.784 2.784 6 3.75 6H4Zm8.25 3.5h-8.5a.25.25 0 0 0-.25.25v5.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25ZM10.5 6V4a2.5 2.5 0 1 0-5 0v2Z"/></svg>
+    <text x="22" y="0" class="label">Private Contribs</text>
+    <text x="218" y="0" class="value" text-anchor="end">107</text>
+  </g>
+
+  <!-- Row 5: Stars Earned -->
+  <g transform="translate(30, 163)">
+    <svg x="0" y="-11" width="14" height="14" viewBox="0 0 16 16"><path fill="#8b949e" d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/></svg>
+    <text x="22" y="0" class="label">Stars Earned</text>
+    <text x="218" y="0" class="value" text-anchor="end">0</text>
+  </g>
+
+  <!-- ── Right: Top Languages ── -->
+  <text x="280" y="60" class="section-lbl">TOP LANGUAGES</text>
+
+  <g transform="translate(280, 75)">
+    <circle cx="5" cy="-4" r="4.5" fill="#3572A5"/>
+    <text x="16" y="0" class="lang-name">Python</text>
+    <text x="190" y="0" class="lang-pct" text-anchor="end">52.5%</text>
+  </g>
+  <g transform="translate(280, 97)">
+    <circle cx="5" cy="-4" r="4.5" fill="#3178c6"/>
+    <text x="16" y="0" class="lang-name">TypeScript</text>
+    <text x="190" y="0" class="lang-pct" text-anchor="end">20.7%</text>
+  </g>
+  <g transform="translate(280, 119)">
+    <circle cx="5" cy="-4" r="4.5" fill="#e34c26"/>
+    <text x="16" y="0" class="lang-name">HTML</text>
+    <text x="190" y="0" class="lang-pct" text-anchor="end">18.1%</text>
+  </g>
+  <g transform="translate(280, 141)">
+    <circle cx="5" cy="-4" r="4.5" fill="#663399"/>
+    <text x="16" y="0" class="lang-name">CSS</text>
+    <text x="190" y="0" class="lang-pct" text-anchor="end">4.5%</text>
+  </g>
+  <g transform="translate(280, 163)">
+    <circle cx="5" cy="-4" r="4.5" fill="#f1e05a"/>
+    <text x="16" y="0" class="lang-name">JavaScript</text>
+    <text x="190" y="0" class="lang-pct" text-anchor="end">1.9%</text>
+  </g>
+
+  <!-- ── Bottom: Language Bar ── -->
+  <rect x="30" y="188" width="435" height="6" rx="3" fill="#21262d"/>
+  <g clip-path="url(#barClip)">
+    <rect x="30" y="188" width="228" height="6" fill="#3572A5"/>
+    <rect x="258" y="188" width="90" height="6" fill="#3178c6"/>
+    <rect x="348" y="188" width="79" height="6" fill="#e34c26"/>
+    <rect x="427" y="188" width="19" height="6" fill="#663399"/>
+    <rect x="446" y="188" width="8" height="6" fill="#f1e05a"/>
+    <rect x="454" y="188" width="11" height="6" fill="#8b949e"/>
+  </g>
+</svg>
